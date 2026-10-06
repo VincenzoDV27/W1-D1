@@ -14,58 +14,157 @@
           <li><a href="#chi-sono">Chi sono</a></li>
           <li><a href="#competenze">Competenze</a></li>
           <li><a href="#progetti">Progetti</a></li>
-          <li><a href="#contatti">Contatti</a></li>
+          <li><a href="#contact-me">Contattami</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h2 id="chi-sono">Chi sono</h2>
-      <p>
-        Mi chiamo Mario Rossi e sto imparando a programmare. Studio sviluppo web
-        con <b>Epicode</b> e ogni giorno aggiungo qualcosa di nuovo a questa
-        pagina. Mi piace lavorare in gruppo, leggere documentazione tecnica e
-        capire come funzionano le cose.
-      </p>
-      <p>
-        Vivo a Mialno. Ho una formazione precedente in <i>lettere</i> e ora sto
-        cambiando settore. cerco un primo ruolo come sviluppatore frontend.
-      </p>
+      <!-- chi sono -->
+      <section>
+        <article>
+          <h2 id="chi-sono">Chi sono</h2>
+          <img
+            src="https://st.depositphotos.com/1743476/1276/i/450/depositphotos_12765264-stock-photo-smiling-business-man.jpg"
+            width="200px"
+            height="200px"
+            alt="Mario Rossi"
+          />
+          <p>
+            Mi chiamo Mario Rossi e sto imparando a programmare. Studio sviluppo
+            web con <b>Epicode</b> e ogni giorno aggiungo qualcosa di nuovo a
+            questa pagina. Mi piace lavorare in gruppo, leggere documentazione
+            tecnica e capire come funzionano le cose.
+          </p>
+          <p>
+            Vivo a Mialno. Ho una formazione precedente in <i>lettere</i> e ora
+            sto cambiando settore. cerco un primo ruolo come sviluppatore
+            frontend.
+          </p>
+        </article>
+        <!-- le mie competenze -->
+        <article>
+          <h2 id="competenze">Competenze</h2>
+          <p>Le tecnologie che vedo durante le prime settimane di corso.</p>
+          <ul>
+            <li>HTML - struttura delle pagine</li>
+            <li>CSS - stile e impaginazione</li>
+            <li>Git e GitHub - versionamento del codice</li>
+            <li>Visual Studio Code - editor di lavoro</li>
+          </ul>
+        </article>
+      </section>
+      <!-- le mie esperienze -->
+      <section>
+        <article>
+          <h2>Esperienze</h2>
+          <p>Un riepilogo del mio percorso formativo e lavorativo recente.</p>
+          <table>
+            <caption>
+              Esperienze formative e lavorative
+            </caption>
+            <thead>
+              <tr>
+                <th>Anno</th>
+                <th>Ruolo</th>
+                <th>Azienda / Scuola</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2026</td>
+                <td>Studente Full Stack</td>
+                <td>Epicode</td>
+              </tr>
+              <tr>
+                <td>2024 - 2025</td>
+                <td>Libraio</td>
+                <td>Libreria Centrale, Milano</td>
+              </tr>
+              <tr>
+                <td>2018 - 2022</td>
+                <td>Studente di Lettere</td>
+                <td>Università degli Studi di Milano</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
     </main>
-    <h2 id="competenze">Competenze</h2>
-    <p>Le tecnologie che vedo durante le prime settimane di corso.</p>
-    <ul>
-      <li>HTML - struttura delle pagine</li>
-      <li>CSS - stile e impaginazione</li>
-      <li>Git e GitHub - versionamento del codice</li>
-      <li>Visual Studio Code - editor di lavoro</li>
-    </ul>
-    <h2 id="progetti">Progetti</h2>
-    <p>I lavori fatti durante le prime settimane di corso.</p>
-    <h3>Pagina ricetta</h3>
-    <p>
-      Una pagina con titolo, ingredienti e procedura. Esercizio di markup
-      semantico applicato a un contenuto reale.
-    </p>
-    <a href="javascript:void(0)">Vedi su GitHub</a>
-    <h3>Card di presentazione</h3>
-    <p>
-      Un biglietto digitale con nome, ruolo e link ai social. Esercizio di
-      sintesi sulla struttura HTML.
-    </p>
-    <a href="javascript:void(0)">Vedi su GitHub</a>
+    <!-- i miei progetti -->
+    <section>
+      <article>
+        <h2 id="progetti">Progetti</h2>
+        <p>I lavori fatti durante le prime settimane di corso.</p>
+        <h3>Pagina ricetta</h3>
+        <p>
+          Una pagina con titolo, ingredienti e procedura. Esercizio di markup
+          semantico applicato a un contenuto reale.
+        </p>
+        <a href="javascript:void(0)">Vedi su GitHub</a>
+        <h3>Card di presentazione</h3>
+        <p>
+          Un biglietto digitale con nome, ruolo e link ai social. Esercizio di
+          sintesi sulla struttura HTML.
+        </p>
+        <a href="javascript:void(0)">Vedi su GitHub</a>
+      </article>
+    </section>
+    <!-- form contattami -->
     <footer>
-      <h2 id="contatti">Contatti</h2>
-      <p>
-        Sono presente su queste piattaforme professionali, dove puoi seguire i
-        miei progetti e contattarmi.
-      </p>
-      Profilo GitHub: <a href="javascript:void(0)">github.com/mariorossi</a>
-      <br />
-      <br />
-      Profilo LinkedIn:
-      <a href="javascript:void(0)">linkedin.com/in/mariorossi</a>
-      <p>&copy; 2026 Mario Rossi</p>
+      <aside>
+        <h2 id="contact-me">Contattami</h2>
+        <p>Complia il form per scrivermi. Ti rispondo entro 24 ore.</p>
+        <form>
+          <label for="name">Nome:</label>
+          <br />
+          <input
+            type="text"
+            placeholder="Il tuo nome"
+            id="name"
+            name="name"
+            required
+          />
+          <br /><br />
+          <label for="email">Email:</label>
+          <br />
+          <input
+            type="email"
+            placeholder="tu@esempio.it"
+            id="email"
+            name="email"
+            required
+          />
+          <br /><br />
+          <label for="reason">Motivo del contatto</label>
+          <br />
+          <select id="reason" name="reason" required>
+            <option value="job">Proposta di lavoro</option>
+            <option value="info">Informazioni</option>
+            <option value="support">Supporto</option>
+          </select>
+          <br /><br />
+          <label for="date-answer">Data preferita per la risposta</label>
+          <br />
+          <input type="date" id="date-answer" name="date-answer" />
+          <br /><br />
+          <label for="message">Messaggio</label>
+          <br />
+          <textarea
+            id="message"
+            placeholder="Scrivi qui il tuo messaggio..."
+            rows="5"
+            cols="20"
+            name="message"
+            required
+          ></textarea>
+          <br /><br />
+          <input type="checkbox" name="accept" id="accept" required /> Accetto
+          di essere ricontattato all'indirizzo indicato <br /><br />
+          <button type="submit">Invia</button>
+        </form>
+        <p>&copy; 2026 Mario Rossi</p>
+      </aside>
     </footer>
   </body>
 </html>
