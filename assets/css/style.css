@@ -63,8 +63,12 @@ h3 {
 
 /* ul line 55 */
 
-li:first-child {
+.skills li:first-child {
   font-weight: bold;
+}
+
+.skills li:nth-of-type(odd) {
+  background-color: #f5f7fb;
 }
 
 /* END */
