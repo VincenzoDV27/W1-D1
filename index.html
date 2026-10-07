@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <!-- presentazione + nav -->
     <header>
       <h1>Mario Rossi</h1>
-      <b>Studente Full Stack</b> -- corso Epicode 2026
+      <div class="description">
+        <b>Studente Full Stack</b> -- corso Epicode 2026
+      </div>
       <nav>
         <ul>
           <li><a href="#chi-sono">Chi sono</a></li>
@@ -30,12 +34,14 @@
             height="200px"
             alt="Mario Rossi"
           />
-          <p>
-            Mi chiamo Mario Rossi e sto imparando a programmare. Studio sviluppo
-            web con <b>Epicode</b> e ogni giorno aggiungo qualcosa di nuovo a
-            questa pagina. Mi piace lavorare in gruppo, leggere documentazione
-            tecnica e capire come funzionano le cose.
-          </p>
+          <div class="italic">
+            <p>
+              Mi chiamo Mario Rossi e sto imparando a programmare. Studio
+              sviluppo web con <b>Epicode</b> e ogni giorno aggiungo qualcosa di
+              nuovo a questa pagina. Mi piace lavorare in gruppo, leggere
+              documentazione tecnica e capire come funzionano le cose.
+            </p>
+          </div>
           <p>
             Vivo a Milano. Ho una formazione precedente in <i>lettere</i> e ora
             sto cambiando settore. cerco un primo ruolo come sviluppatore
@@ -101,13 +107,13 @@
           Una pagina con titolo, ingredienti e procedura. Esercizio di markup
           semantico applicato a un contenuto reale.
         </p>
-        <a href="javascript:void(0)">Vedi su GitHub</a>
+        <a class="github-link" href="javascript:void(0)">Vedi su GitHub</a>
         <h3>Card di presentazione</h3>
         <p>
           Un biglietto digitale con nome, ruolo e link ai social. Esercizio di
           sintesi sulla struttura HTML.
         </p>
-        <a href="javascript:void(0)">Vedi su GitHub</a>
+        <a class="github-link" href="javascript:void(0)">Vedi su GitHub</a>
       </article>
     </section>
     <!-- form contattami -->
@@ -159,11 +165,16 @@
             required
           ></textarea>
           <br /><br />
-          <input type="checkbox" name="accept" id="accept" required /> Accetto
-          di essere ricontattato all'indirizzo indicato <br /><br />
-          <button type="submit">Invia</button>
+          <input type="checkbox" name="accept" id="accept" required />
+          <label for="accept">
+            Accetto di essere ricontattato all'indirizzo indicato
+          </label>
+          <br /><br />
+          <button class="submit-form" type="submit">Invia</button>
         </form>
-        <p>&copy; 2026 Mario Rossi</p>
+        <div class="cr-banner">
+          <p>&copy; 2026 Mario Rossi</p>
+        </div>
       </aside>
     </footer>
   </body>
