@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Mario Rossi</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=fiber_new"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -25,15 +29,15 @@
 
     <main>
       <!-- chi sono -->
-      <section>
+      <section class="chi-sono">
         <article>
           <h2 id="chi-sono">Chi sono</h2>
-          <img
-            src="https://st.depositphotos.com/1743476/1276/i/450/depositphotos_12765264-stock-photo-smiling-business-man.jpg"
-            width="200px"
-            height="200px"
-            alt="Mario Rossi"
-          />
+          <div class="photo-profile">
+            <img
+              src="https://st.depositphotos.com/1743476/1276/i/450/depositphotos_12765264-stock-photo-smiling-business-man.jpg"
+              alt="foto profilo di Mario Rossi"
+            />
+          </div>
           <div class="italic">
             <p>
               Mi chiamo Mario Rossi e sto imparando a programmare. Studio
@@ -42,21 +46,24 @@
               documentazione tecnica e capire come funzionano le cose.
             </p>
           </div>
+          <br />
           <p>
             Vivo a Milano. Ho una formazione precedente in <i>lettere</i> e ora
             sto cambiando settore. cerco un primo ruolo come sviluppatore
             frontend.
           </p>
         </article>
-        <!-- le mie competenze -->
+      </section>
+      <!-- le mie competenze -->
+      <section>
         <article class="skills">
           <h2 id="competenze">Competenze</h2>
           <p>Le tecnologie che vedo durante le prime settimane di corso.</p>
           <ul>
-            <li>HTML - struttura delle pagine</li>
-            <li>CSS - stile e impaginazione</li>
-            <li>Git e GitHub - versionamento del codice</li>
-            <li>Visual Studio Code - editor di lavoro</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Git e GitHub</li>
+            <li>Visual Studio Code</li>
           </ul>
         </article>
       </section>
@@ -102,12 +109,17 @@
       <article>
         <h2 id="progetti">Progetti</h2>
         <p>I lavori fatti durante le prime settimane di corso.</p>
-        <h3>Pagina ricetta</h3>
-        <p>
-          Una pagina con titolo, ingredienti e procedura. Esercizio di markup
-          semantico applicato a un contenuto reale.
-        </p>
-        <a class="github-link" href="javascript:void(0)">Vedi su GitHub</a>
+        <div class="recipes">
+          <h3>
+            Pagina ricetta
+            <span class="material-symbols-outlined"> fiber_new </span>
+          </h3>
+          <p>
+            Una pagina con titolo, ingredienti e procedura. Esercizio di markup
+            semantico applicato a un contenuto reale.
+          </p>
+          <a class="github-link" href="javascript:void(0)">Vedi su GitHub</a>
+        </div>
         <h3>Card di presentazione</h3>
         <p>
           Un biglietto digitale con nome, ruolo e link ai social. Esercizio di
@@ -118,64 +130,66 @@
     </section>
     <!-- form contattami -->
     <footer>
-      <aside>
-        <h2 id="contact-me">Contattami</h2>
-        <p>Complia il form per scrivermi. Ti rispondo entro 24 ore.</p>
-        <form>
-          <label for="name">Nome:</label>
-          <br />
-          <input
-            type="text"
-            placeholder="Il tuo nome"
-            id="name"
-            name="name"
-            required
-          />
-          <br /><br />
-          <label for="email">Email:</label>
-          <br />
-          <input
-            type="email"
-            placeholder="tu@esempio.it"
-            id="email"
-            name="email"
-            required
-          />
-          <br /><br />
-          <label for="reason">Motivo del contatto</label>
-          <br />
-          <select id="reason" name="reason" required>
-            <option value="job">Proposta di lavoro</option>
-            <option value="info">Informazioni</option>
-            <option value="support">Supporto</option>
-          </select>
-          <br /><br />
-          <label for="date-answer">Data preferita per la risposta</label>
-          <br />
-          <input type="date" id="date-answer" name="date-answer" />
-          <br /><br />
-          <label for="message">Messaggio</label>
-          <br />
-          <textarea
-            id="message"
-            placeholder="Scrivi qui il tuo messaggio..."
-            rows="5"
-            cols="20"
-            name="message"
-            required
-          ></textarea>
-          <br /><br />
-          <input type="checkbox" name="accept" id="accept" required />
-          <label for="accept">
-            Accetto di essere ricontattato all'indirizzo indicato
-          </label>
-          <br /><br />
-          <button class="submit-form" type="submit">Invia</button>
-        </form>
-        <div class="cr-banner">
-          <p>&copy; 2026 Mario Rossi</p>
-        </div>
-      </aside>
+      <section>
+        <aside>
+          <h2 id="contact-me">Contattami</h2>
+          <p>Complia il form per scrivermi. Ti rispondo entro 24 ore.</p>
+          <form>
+            <label for="name">Nome:</label>
+            <br />
+            <input
+              type="text"
+              placeholder="Il tuo nome"
+              id="name"
+              name="name"
+              required
+            />
+            <br /><br />
+            <label for="email">Email:</label>
+            <br />
+            <input
+              type="email"
+              placeholder="tu@esempio.it"
+              id="email"
+              name="email"
+              required
+            />
+            <br /><br />
+            <label for="reason">Motivo del contatto</label>
+            <br />
+            <select id="reason" name="reason" required>
+              <option value="job">Proposta di lavoro</option>
+              <option value="info">Informazioni</option>
+              <option value="support">Supporto</option>
+            </select>
+            <br /><br />
+            <label for="date-answer">Data preferita per la risposta</label>
+            <br />
+            <input type="date" id="date-answer" name="date-answer" />
+            <br /><br />
+            <label for="message">Messaggio</label>
+            <br />
+            <textarea
+              id="message"
+              placeholder="Scrivi qui il tuo messaggio..."
+              rows="5"
+              cols="20"
+              name="message"
+              required
+            ></textarea>
+            <br /><br />
+            <input type="checkbox" name="accept" id="accept" required />
+            <label for="accept">
+              Accetto di essere ricontattato all'indirizzo indicato
+            </label>
+            <br /><br />
+            <button class="submit-form" type="submit">Invia</button>
+          </form>
+        </aside>
+      </section>
+      <div class="cr-banner">
+        <p>&copy; 2026 Mario Rossi</p>
+      </div>
     </footer>
   </body>
 </html>

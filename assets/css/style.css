@@ -1,24 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-html {
-  font-family: "Roboto", sans-serif;
+* {
+  box-sizing: border-box;
 }
 
-/* header + nav */
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 20px;
+  padding: 40px;
+  border: 2px solid #e0e0e0;
+  border-radius: 2%;
+  box-shadow: 4px 4px 12px #e0e0e0;
+}
+
+section h2::before {
+  content: "--- ";
+  color: gold;
+}
 
 header {
   background-image: url("https://images.pexels.com/photos/11827934/pexels-photo-11827934.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 100px;
+  border-bottom: 3px solid gold;
 }
 
-nav ul {
-  color: white;
+/* titles article */
+
+h2,
+h3 {
+  color: #1f3d7a;
+}
+
+/* END */
+
+/* nav */
+nav {
+  text-align: center;
 }
 
 nav li {
+  display: inline-block;
   text-align: center;
+}
+
+nav li:not(:first-child) {
+  margin-left: 20px;
+}
+
+nav ul {
+  margin-top: 50px;
 }
 
 nav a {
@@ -27,6 +66,7 @@ nav a {
 
 nav a:hover {
   color: white;
+  background-color: rgb(255 255 255 / 0.2);
 }
 
 h1 {
@@ -39,29 +79,42 @@ h1 {
 .description {
   color: #f44a4a;
   text-align: center;
+  margin-top: 30px;
 }
 
 /* END */
 
-.github-link:hover {
-  color: red;
+/* chi-sono */
+
+.photo-profile img {
+  width: 100px;
+  height: 100px;
 }
 
-h2,
-h3 {
-  color: #1f3d7a;
+.photo-profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid gold;
+  overflow: hidden;
+  float: left;
+  margin: 10px;
 }
-
-/* div line 37 */
 
 .italic {
   font-style: italic;
   color: #2d3953;
 }
 
+.italic::first-letter {
+  color: #1f3d7a;
+  font-weight: bold;
+  font-size: 2em;
+}
+
 /* END */
 
-/* ul line 55 */
+/* le mie competenze */
 
 .skills li:first-child {
   font-weight: bold;
@@ -73,17 +126,45 @@ h3 {
 
 /* END */
 
-/* form style */
+/* le mie esperienze */
+
+table caption {
+  color: #1f3d7a;
+}
+
+table th,
+td {
+  text-align: center;
+  border: 2px solid black;
+}
+
+/* END */
+
+/* i miei progetti */
+
+.recipes {
+  background-color: #fbf8ef;
+}
+
+.github-link:hover {
+  color: red;
+}
+
+.material-symbols-outlined {
+  font-size: 1.5em;
+  border-radius: 2%;
+  color: white;
+  background-color: red;
+}
+
+/* END */
+
+/* form contattami */
 
 input {
   font-family: "helvetica neue", helvetica, arial, sans-serif;
   border: 1px solid black;
   width: 60%;
-}
-
-input:focus {
-  background: #232323;
-  color: white;
 }
 
 input:last-of-type {
@@ -117,10 +198,15 @@ textarea {
 
 /* END */
 
+/* BANNER */
+
 .cr-banner {
+  padding: 50px;
   background: #172136;
   line-height: 2;
   font-size: 15px;
   text-align: center;
   color: white;
 }
+
+/* END */
